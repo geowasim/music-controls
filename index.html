@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <!-- Music -->
+      <div class="img-container">
+        <img src="img/song-2.jpg" alt="s1" />
+      </div>
+      <h2 id="title">Electric Chill Machine</h2>
+      <h3 id="artist">Someone</h3>
+      <audio src="music/song-2.mp3"></audio>
+      <!-- Progress -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <sapn id="duration">2:06</sapn>
+        </div>
+      </div>
+      <!-- Control -->
+      <div class="player-controls">
+        <i id="prev" title="Previous" class="fas fa-backward"></i>
+        <i id="play" title="Play" class="fas fa-play main-button"></i>
+        <i id="next" title="Next" class="fas fa-forward"></i>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
